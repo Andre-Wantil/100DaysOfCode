@@ -199,3 +199,8 @@ function palindromoCheckerinatorV1(palavra: string): void {
 palindromoCheckerinatorV1('Esse')
 
 // 20
+const Aderbalildeson: object = {
+    nome: "Aderbalildeson",
+    idade: 24,
+    profissão: "Assistente de pedreiro"
+}
