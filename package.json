@@ -1,0 +1,17 @@
+{
+  "name": "100daysofcode",
+  "version": "1.0.0",
+  "description": "Este documento contém uma lista de 100 exercícios de JavaScript, organizados do básico ao avançado. O objetivo desta lista é proporcionar um plano de estudos consistente e progressivo, permitindo que você pratique e aprimore suas habilidades em JavaScript ao longo do tempo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tslint": "^5.20.1",
+    "typescript": "^5.7.3"
+  }
+}
