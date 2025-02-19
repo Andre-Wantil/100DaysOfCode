@@ -153,17 +153,17 @@ function contarALetraAiDoidoinatorV1(letra: string, palavra: string): void {
 contarALetraAiDoidoinatorV1('a', 'Soft and Wet')
 
 // 16
-function inverterPalavrasinatorV1(palavra: string): void {
+function inverterPalavrasinatorV1(palavra: string): string {
     let palavraInvertida: string = ''
 
     for (let i = 0; i < palavra.length; i++) {
         palavraInvertida = palavra[i] + palavraInvertida 
     }
 
-    return console.log(palavraInvertida)
+    return palavraInvertida
 }
 
-inverterPalavrasinatorV1('Sigma')
+console.log(inverterPalavrasinatorV1('Sigma'))
 
 // 17
 function removedorDeEspacosinator(palavra: string): void {
@@ -175,3 +175,27 @@ function removedorDeEspacosinator(palavra: string): void {
 removedorDeEspacosinator('Sig ma')
 
 // 18
+function letraMaiusculinatorV1(palavra: string): void {
+    let palavraMaiuscula = palavra.charAt(0).toUpperCase() + palavra.slice(1)
+
+    console.log(palavraMaiuscula)
+}
+
+letraMaiusculinatorV1('bill')
+
+// 19
+function palindromoCheckerinatorV1(palavra: string): void {
+    let palavraInvertida: string = inverterPalavrasinatorV1(palavra)
+
+    if (palavraInvertida.toLowerCase() === palavra.toLowerCase()) {
+        return console.log(`A palavra ${palavra} é um palíndomo`)
+    } else if (palavraInvertida.toLowerCase() != palavra.toLowerCase()) {
+        return console.log(`A palavra ${palavra} não é um palíndromo`)
+    } else {
+        return console.log('Isso não é uma palavra')
+    }
+}
+
+palindromoCheckerinatorV1('Esse')
+
+// 20

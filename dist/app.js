@@ -127,12 +127,32 @@ function inverterPalavrasinatorV1(palavra) {
     for (let i = 0; i < palavra.length; i++) {
         palavraInvertida = palavra[i] + palavraInvertida;
     }
-    return console.log(palavraInvertida);
+    return palavraInvertida;
 }
-inverterPalavrasinatorV1('Sigma');
+console.log(inverterPalavrasinatorV1('Sigma'));
 // 17
 function removedorDeEspacosinator(palavra) {
     let palavraDesespacada = palavra.split(' ').join('');
     return console.log(palavraDesespacada);
 }
 removedorDeEspacosinator('Sig ma');
+// 18
+function letraMaiusculinatorV1(palavra) {
+    let palavraMaiuscula = palavra.charAt(0).toUpperCase() + palavra.slice(1);
+    console.log(palavraMaiuscula);
+}
+letraMaiusculinatorV1('bill');
+// 19
+function palindromoCheckerinatorV1(palavra) {
+    let palavraInvertida = inverterPalavrasinatorV1(palavra);
+    if (palavraInvertida.toLowerCase() === palavra.toLowerCase()) {
+        return console.log(`A palavra ${palavra} é um palíndomo`);
+    }
+    else if (palavraInvertida.toLowerCase() != palavra.toLowerCase()) {
+        return console.log(`A palavra ${palavra} não é um palíndromo`);
+    }
+    else {
+        return console.log('Isso não é uma palavra');
+    }
+}
+palindromoCheckerinatorV1('Esse');
